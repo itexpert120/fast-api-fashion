@@ -185,6 +185,11 @@ async def get_item(id: int):
     return item_data
 
 
+@app.get("/")
+async def root():
+    return {"Hello": "World"}
+
+
 if __name__ == "__main__":
     import uvicorn
 
